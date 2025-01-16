@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate, BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom';
 import { Alert } from './components/ui/alert';
 
-const API_URL = process.env.BACKEND_API_URL;
+
+const API_URL = process.env.REACT_APP_BACKEND_API_URL;
+
+console.log('API_URL:', API_URL);
 
 // Auth Context
 const AuthContext = React.createContext(null);
